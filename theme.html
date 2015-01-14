@@ -94,7 +94,7 @@
                   </div>
                   {% if post.tags %}
                   <div class="post-tags">
-                    {{- post.tags|format_tags(humanize=True) -}}
+                    Теги: {{- post.tags|format_tags(humanize=True) -}}
                   </div>
                   {% endif %}
                 </div>
@@ -152,7 +152,7 @@
 
                 {% if post.tags %}
                 <div class="post-tags">
-                  {{- post.tags|format_tags(humanize=True) -}}
+                  Теги: {{- post.tags|format_tags(humanize=True) -}}
                 </div>
                 {% endif %}
               </section>
