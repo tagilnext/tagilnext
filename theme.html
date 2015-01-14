@@ -72,14 +72,14 @@
                   </h2>
                   <div class="post-metadata">
                     <div class="left">
-                      <p class="post-byline">Published by {{ site.author }}</p>
-                      <p><time datetime="{{ post.created_at }}" class="post-date">{{ post.created_at|date_format }}</time></p>
+                      <p class="post-byline">Опубликовал {{ site.author }}</p>
+                     
                     </div>
                     <div class="right">
                       <p class="post-comment-count">
                         <a href="{{ post.permalink }}{% if site.disqus %}{% endif %}" class='dsq-comment-count comment-link commentslink'></a>
                       </p>
-                      <p><a href="{{ post.permalink }}" class="post-permalink">Permalink</a></p>
+                      <p><a href="{{ post.permalink }}" class="post-permalink">Подробнее</a></p>
                     </div>
                   </div>
                 </header>
@@ -113,7 +113,7 @@
             {% endif %}
             {% else %}
             <div class="blog-feed">
-              <h2 class="title"><em>No posts yet :(</em></h2>
+              <h2 class="title"><em>Еще нет ни одной статьи :(</em></h2>
             </div>
             {% endif %}
 
@@ -135,8 +135,8 @@
                     <h1 class="post-title">{{ post.title }}</h1>
                   </div>
                   <div class="post-metadata">
-                    <p class="post-byline left">Published by {{ site.author }}</p>
-                    <p class="right"><time datetime="{{ post.created_at }}" class="post-date">{{ post.created_at|date_format }}</time></p>
+                    <p class="post-byline left">Опубликовал {{ site.author }}</p>
+                    
                   </div>
                 </header>
                 <div class="post-content">
@@ -189,9 +189,7 @@
           {% endif %}
           </div>
           <div class="site-footer">
-            <p>All rights Reserved &copy; <a href="/">{{ site.name }}</a>.</p>
-            <br />
-            <p>Theme inspired by <a href="http://www.fabthemes.com/binary/" target="_blank">Fabthemes</a> | Powered by <a href="http://postach.io/">Postach.io</a></p>
+            <p>Все права защищены &copy; <a href="/">{{ site.name }}</a>.</p>
           </div>
         </div>
         <div class="four columns">
@@ -241,7 +239,7 @@
               </div>
             </div>
             <div class="widget widget-latestposts">
-              <h2 class="widget-title">Latest Posts</h2>
+              <h2 class="widget-title">Новое</h2>
               <div class="widget-content popular-posts">
                 {% if posts_recent %}
                 <ul>
@@ -255,7 +253,7 @@
               </div>
             </div>
             <div class="widget widget-tagcloud">
-              <h2 class="widget-title">Tag Cloud</h2>
+              <h2 class="widget-title">Теги</h2>
               <div class="widget-content tag-cloud">
                 {% if site.tags %}
                 <ul>
@@ -273,7 +271,7 @@
 
     {% endif %}
 
-   {{ footer_meta }}
+    {{ footer_meta }}
 
   </body>
 </html>
